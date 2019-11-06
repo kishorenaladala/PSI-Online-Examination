@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PSI exams online">
+	<test name ="Regresion Testing Chrome Browser">
+	<parameter name ="browsername" value = "chrome"></parameter>
+	<parameter name = "url" value = "https://candidate.psiexams.com/"></parameter>
+	<groups>
+		<run>
+			<include name="RegresionTesting"/>
+			<include name="SanityTesting"/>
+		</run>
+	</groups>
+		<classes>
+		<class name="com.testing.createAnAccount"/>
+		<class name="com.testing.RegisterForTest"/>
+		</classes>
+	</test>
+	
+	
+</suite>
